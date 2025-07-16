@@ -1,0 +1,49 @@
+Creating a table
+=================
+
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Department VARCHAR(50)
+);
+
+Inserting data into the table
+=============================
+
+INSERT INTO Students (StudentID, Name, Department)
+VALUES 
+(52, 'Gayathri' 'CSE'),
+(23 'Rekha', 'IT'),
+(53, 'alekhya', 'CSE'),
+(76, 'Mounika', 'CSE');
+
+
+Updating data in the existing rows
+==================================
+
+UPDATE Students
+SET Department = 'IT'
+WHERE StudentID = 52;
+
+Getting the Table by using SELECT Query
+=======================================
+
+SELECT * From Students;
+
+
+getting specific data by using where condition
+==============================================
+
+SELECT * FROM Students
+WHERE StudentID = 23;
+
+Using aggregate function  
+========================
+
+SELECT Count(*) AS TotalStudents from STUDENTS
+
+Using DELETE Query
+=================
+
+DELETE from Students
+WHERE Name = 'Mounika';
